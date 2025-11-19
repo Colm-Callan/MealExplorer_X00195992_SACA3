@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\calla\\source\\MealExplorer_X00195992_SACA3\\MealExplorer\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{35A1D4F8-C682-89DE-8915-50436064FEA0}|MealExplorer.csproj|c:\\users\\calla\\source\\mealexplorer_x00195992_saca3\\mealexplorer\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{35A1D4F8-C682-89DE-8915-50436064FEA0}|MealExplorer.csproj|solutionrelative:wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{35A1D4F8-C682-89DE-8915-50436064FEA0}|MealExplorer.csproj|c:\\users\\calla\\source\\mealexplorer_x00195992_saca3\\mealexplorer\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{35A1D4F8-C682-89DE-8915-50436064FEA0}|MealExplorer.csproj|solutionrelative:pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -18,11 +22,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\calla\\source\\MealExplorer_X00195992_SACA3\\MealExplorer\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\calla\\source\\MealExplorer_X00195992_SACA3\\MealExplorer\\wwwroot\\index.html",
+              "RelativeToolTip": "wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-11-19T18:52:27.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Weather.razor",
               "DocumentMoniker": "C:\\Users\\calla\\source\\MealExplorer_X00195992_SACA3\\MealExplorer\\Pages\\Weather.razor",
               "RelativeDocumentMoniker": "Pages\\Weather.razor",
@@ -30,12 +47,11 @@
               "RelativeToolTip": "Pages\\Weather.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-19T14:08:22.362Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-19T14:08:22.362Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\calla\\source\\MealExplorer_X00195992_SACA3\\MealExplorer\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "Pages\\Home.razor",
