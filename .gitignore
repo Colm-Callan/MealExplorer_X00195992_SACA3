@@ -52,3 +52,12 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# Ignore Visual Studio workspace and build output
+.vs/
+bin/
+obj/
+
+# VS user files
+*.user
+*.suo
