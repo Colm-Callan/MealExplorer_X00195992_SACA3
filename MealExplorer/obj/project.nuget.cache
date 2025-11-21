@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DK5eoPeFQ8o=",
+  "dgSpecHash": "2rLQ2T9kUEY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\calla\\source\\MealExplorer_X00195992_SACA3\\MealExplorer\\MealExplorer.csproj",
+  "projectFilePath": "C:\\Users\\calla\\source\\csCA\\MealExplorer_X00195992_SACA3\\MealExplorer\\MealExplorer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\calla\\.nuget\\packages\\microsoft.aspnetcore.authorization\\9.0.9\\microsoft.aspnetcore.authorization.9.0.9.nupkg.sha512",
     "C:\\Users\\calla\\.nuget\\packages\\microsoft.aspnetcore.components\\9.0.9\\microsoft.aspnetcore.components.9.0.9.nupkg.sha512",
