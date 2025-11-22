@@ -63,6 +63,4 @@ obj/
 *.suo
 
 
-# adding ignore of index so i can run locally and on gh pages
-index.html
-/wwwroot/index.html
+
