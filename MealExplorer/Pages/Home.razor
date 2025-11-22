@@ -6,4 +6,111 @@
 <h3>adding more text to check it still deploys new additions to the github pages page</h3>
 <button>Click me</button>
 <h1>More text</h1>
-Welcome to your new app.
+@* test content above *@
+
+@using MealExplorer.Models
+@inject MealExplorer.Services.MealApiService MealService
+
+<h3>Random Meal</h3>
+
+@if (isLoading)
+{
+    <p class="meal-loading">Loading meal...</p>
+}
+else if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="meal-error">@errorMessage</div>
+    <div class="meal-actions">
+        <button @onclick="Reload">Try Again</button>
+    </div>
+}
+else if (meal is not null)
+{
+    <div class="meal-card">
+        @if (!string.IsNullOrWhiteSpace(meal.Thumbnail))
+        {
+            <img src="@meal.Thumbnail" alt="@meal.Name" class="meal-image" />
+        }
+
+        <h4 class="meal-title">@meal.Name</h4>
+
+        <p>
+            <strong>Category:</strong> @meal.Category <br />
+            <strong>Cuisine/Area:</strong> @meal.Area
+        </p>
+
+        <p>
+            <strong>Instructions:</strong><br />
+            @meal.Instructions
+        </p>
+
+        @if (meal.GetIngredients().Count > 0)
+        {
+            <div>
+                <strong>Ingredients:</strong>
+                <ul class="meal-ingredients">
+                    @foreach (var item in meal.GetIngredients())
+                    {
+                        <li>@item.Measure @item.Ingredient</li>
+                    }
+                </ul>
+            </div>
+        }
+
+        @if (!string.IsNullOrWhiteSpace(meal.Youtube))
+        {
+            <p>
+                <a href="@meal.Youtube"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="meal-video-link">
+                    Watch on YouTube
+                </a>
+            </p>
+        }
+
+        <div class="meal-actions">
+            <button @onclick="Reload">Get Another Random Meal</button>
+        </div>
+    </div>
+}
+else
+{
+    <div>No meal found.</div>
+    <div class="meal-actions">
+        <button @onclick="Reload">Try Again</button>
+    </div>
+}
+
+@code {
+    private Meal? meal;
+    private bool isLoading = true;
+    private string? errorMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadMealAsync();
+    }
+
+    private async Task LoadMealAsync()
+    {
+        isLoading = true;
+        errorMessage = null;
+        meal = null;
+
+        meal = await MealService.GetRandomMealAsync();
+
+        if (meal is null)
+        {
+            errorMessage = "Could not load a random meal. Please try again.";
+        }
+
+        isLoading = false;
+        StateHasChanged();
+    }
+
+    private async Task Reload()
+    {
+        await LoadMealAsync();
+    }
+}

@@ -112,3 +112,62 @@ code {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
     text-align: start;
 }
+
+
+/* for a single random meal */
+.meal-card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    max-width: 700px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    background-color: #fff;
+}
+
+/* Meal thumb image */
+.meal-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+}
+
+/* Title gap */
+.meal-title {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+/* Ingred list */
+.meal-ingredients {
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+    .meal-ingredients li {
+        margin-bottom: 4px;
+        font-size: 15px;
+    }
+
+/* Error styling */
+.meal-error {
+    color: #b00020;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+/* Button spacing in meal crad */
+.meal-actions {
+    margin-top: 12px;
+}
+
+/* Link to YouTube */
+.meal-video-link {
+    display: inline-block;
+    margin-top: 8px;
+    text-decoration: underline;
+}
