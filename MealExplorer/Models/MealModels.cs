@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace MealExplorer.Models
-{ 
+namespace MealExplorer.Models;
     public class MealResponse
     {
         [JsonPropertyName("meals")]
@@ -102,4 +101,3 @@ namespace MealExplorer.Models
             return ingredients;
         }
     }
-}

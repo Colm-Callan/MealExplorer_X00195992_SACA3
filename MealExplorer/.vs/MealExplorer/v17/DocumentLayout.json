@@ -11,8 +11,12 @@
       "RelativeMoniker": "D:0:0:{35A1D4F8-C682-89DE-8915-50436064FEA0}|MealExplorer.csproj|solutionrelative:pages\\mealfromingredients.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35A1D4F8-C682-89DE-8915-50436064FEA0}|MealExplorer.csproj|c:\\users\\calla\\source\\csca\\mealexplorer_x00195992_saca3\\mealexplorer\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{35A1D4F8-C682-89DE-8915-50436064FEA0}|MealExplorer.csproj|solutionrelative:layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{35A1D4F8-C682-89DE-8915-50436064FEA0}|MealExplorer.csproj|c:\\users\\calla\\source\\csca\\mealexplorer_x00195992_saca3\\mealexplorer\\services\\mealapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35A1D4F8-C682-89DE-8915-50436064FEA0}|MealExplorer.csproj|solutionrelative:services\\mealapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35A1D4F8-C682-89DE-8915-50436064FEA0}|MealExplorer.csproj|c:\\users\\calla\\source\\csca\\mealexplorer_x00195992_saca3\\mealexplorer\\models\\mealfiltermodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35A1D4F8-C682-89DE-8915-50436064FEA0}|MealExplorer.csproj|solutionrelative:models\\mealfiltermodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,24 +34,39 @@
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\calla\\source\\csCA\\MealExplorer_X00195992_SACA3\\MealExplorer\\wwwroot\\index.html",
               "RelativeDocumentMoniker": "wwwroot\\index.html",
-              "ToolTip": "C:\\Users\\calla\\source\\csCA\\MealExplorer_X00195992_SACA3\\MealExplorer\\wwwroot\\index.html*",
-              "RelativeToolTip": "wwwroot\\index.html*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\calla\\source\\csCA\\MealExplorer_X00195992_SACA3\\MealExplorer\\wwwroot\\index.html",
+              "RelativeToolTip": "wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-11-23T11:53:06.441Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MealFilterModels.cs",
+              "DocumentMoniker": "C:\\Users\\calla\\source\\csCA\\MealExplorer_X00195992_SACA3\\MealExplorer\\Models\\MealFilterModels.cs",
+              "RelativeDocumentMoniker": "Models\\MealFilterModels.cs",
+              "ToolTip": "C:\\Users\\calla\\source\\csCA\\MealExplorer_X00195992_SACA3\\MealExplorer\\Models\\MealFilterModels.cs",
+              "RelativeToolTip": "Models\\MealFilterModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T12:33:36.929Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "NavMenu.razor",
-              "DocumentMoniker": "C:\\Users\\calla\\source\\csCA\\MealExplorer_X00195992_SACA3\\MealExplorer\\Layout\\NavMenu.razor",
-              "RelativeDocumentMoniker": "Layout\\NavMenu.razor",
-              "ToolTip": "C:\\Users\\calla\\source\\csCA\\MealExplorer_X00195992_SACA3\\MealExplorer\\Layout\\NavMenu.razor",
-              "RelativeToolTip": "Layout\\NavMenu.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-23T11:45:06.673Z",
+              "Title": "MealApiService.cs",
+              "DocumentMoniker": "C:\\Users\\calla\\source\\csCA\\MealExplorer_X00195992_SACA3\\MealExplorer\\Services\\MealApiService.cs",
+              "RelativeDocumentMoniker": "Services\\MealApiService.cs",
+              "ToolTip": "C:\\Users\\calla\\source\\csCA\\MealExplorer_X00195992_SACA3\\MealExplorer\\Services\\MealApiService.cs",
+              "RelativeToolTip": "Services\\MealApiService.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAIwDYAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T12:34:51.675Z",
               "EditorCaption": ""
             },
             {
@@ -58,7 +77,7 @@
               "RelativeDocumentMoniker": "Pages\\MealFromIngredients.razor",
               "ToolTip": "C:\\Users\\calla\\source\\csCA\\MealExplorer_X00195992_SACA3\\MealExplorer\\Pages\\MealFromIngredients.razor",
               "RelativeToolTip": "Pages\\MealFromIngredients.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-11-23T11:44:37.643Z",
               "EditorCaption": ""

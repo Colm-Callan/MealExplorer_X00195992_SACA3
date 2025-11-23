@@ -1,7 +1,205 @@
 ﻿@page "/MealFromIngredients"
 
-<PageTitle>MealFromIngredients</PageTitle>
+@using MealExplorer.Models
+@inject MealExplorer.Services.MealApiService MealService
 
-<h1>MealFromIngredients</h1>
+<PageTitle>Meal From Ingredients</PageTitle>
 
-<h1>this will go here</h1>
+<h3>Find Meals By Ingredient</h3>
+
+<!-- Simple search feat -->
+<div>
+    <label for="ingredientInput">Ingredient:</label>
+    <input id="ingredientInput"
+           @bind="ingredient"
+           @bind:event="oninput"
+           placeholder="e.g. chicken, tomato" />
+
+    <button @onclick="Search" disabled="@isSearching">Search</button>
+
+    @if (!string.IsNullOrEmpty(validationMessage))
+    {
+        <div class="meal-error" style="margin-top:8px;">@validationMessage</div>
+    }
+</div>
+
+<!-- for when the page is: loading, error, details, list, or has no results -->
+@if (isSearching)
+{
+    <p class="meal-loading">Loading...</p>
+}
+else if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="meal-error">@errorMessage</div>
+}
+else if (selectedMeal is not null)
+{
+    <!-- Single meal details (used the thing fro thr style from random meal (Card desc, video and now go back as well) -->
+    <div class="meal-card">
+        @if (!string.IsNullOrWhiteSpace(selectedMeal.Thumbnail))
+        {
+            <img src="@selectedMeal.Thumbnail" alt="@selectedMeal.Name" class="meal-image" />
+        }
+
+        <h4 class="meal-title">@selectedMeal.Name</h4>
+
+        <p>
+            <strong>Category:</strong> @selectedMeal.Category <br />
+            <strong>Cuisine/Area:</strong> @selectedMeal.Area
+        </p>
+
+        <p>
+            <strong>Instructions:</strong><br />
+            @selectedMeal.Instructions
+        </p>
+
+        @{
+            var ingList = selectedMeal.GetIngredients();
+        }
+
+        @if (ingList.Count > 0)
+        {
+            <div>
+                <strong>Ingredients:</strong>
+                <ul class="meal-ingredients">
+                    @foreach (var pair in ingList) @* each tuple is = Measure + Ingredient *@
+                    {
+                        <li>@pair.Measure @pair.Ingredient</li>
+                    }
+                </ul>
+            </div>
+        }
+
+        @if (!string.IsNullOrWhiteSpace(selectedMeal.Youtube))
+        {
+            <p>
+                <a href="@selectedMeal.Youtube"
+                   target="_blank"
+                   class="meal-video-link">
+                    Watch on YouTube
+                </a>
+            </p>
+        }
+
+        <div class="meal-actions">
+            <button @onclick="BackToResults">Back to results</button> @* takes you back to list *@
+        </div>
+    </div>
+}
+else if (results is not null && results.Count > 0)
+{
+    <!-- Click a image or name to load full details of meal like what I made for random page -->
+    <div>
+        <h4 class="meal-title">Results (@results.Count)</h4>
+        <ul>
+            @foreach (var item in results) @* each item has id, name, thumbnail *@
+            {
+                <li style="margin-bottom:8px;">
+                    <a href="#"
+                       @onclick:preventDefault
+                       @onclick="() => ShowMeal(item.IdMeal)"
+                       title="View details">
+                        @if (!string.IsNullOrWhiteSpace(item.Thumbnail))
+                        {
+                            <img src="@item.Thumbnail"
+                                 alt="@item.Name"
+                                 style="width:60px; height:auto; vertical-align:middle; margin-right:8px;" />
+                        }
+                        <span>@item.Name</span>
+                    </a>
+                </li>
+            }
+        </ul>
+    </div>
+}
+else if (results is not null && results.Count == 0)
+{
+    <p>No meals found for ingredient: <strong>@ingredient</strong></p> @* show when search returns empty *@
+}
+
+@code {
+    // Input and messages
+    private string? ingredient;              // the user typed ingredient
+    private string? validationMessage;       // if user leaves input blank
+    private string? errorMessage;            // if API call fails
+
+    // State flags
+    private bool isSearching = false;        // true while awaiting API to do its thing
+
+    // Data
+    private List<MealFilterItem>? results;   // null = not searched yet
+    private Meal? selectedMeal;
+
+    // search
+    private async Task Search()
+    {
+        validationMessage = null;
+        errorMessage = null;
+        selectedMeal = null; // to hide things b4 search when searching
+        results = null;      // clear old list / last search
+
+        if (string.IsNullOrWhiteSpace(ingredient))
+        {
+            validationMessage = "Ingredient is required.";
+            return;
+        }
+
+        isSearching = true;
+        try
+        {
+            results = await MealService.GetMealsByIngredientAsync(ingredient); // goes getting the list
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Search failed: {ex.Message}"; //if search fails catches error
+            results = new List<MealFilterItem>(); // retunrs empty list here
+        }
+        finally
+        {
+            isSearching = false; // end the loading state on the page
+        }
+    }
+
+    // Clear everything in list and more for fresh search
+    private void Clear()
+    {
+        ingredient = "";
+        validationMessage = null;
+        errorMessage = null;
+        results = null;
+        selectedMeal = null;
+    }
+
+    // Load full details for one single meal (details, etc)
+    private async Task ShowMeal(string? id)
+    {
+        if (string.IsNullOrWhiteSpace(id))
+            return;
+
+        errorMessage = null;
+        isSearching = true;
+
+        try
+        {
+            selectedMeal = await MealService.GetMealByIdAsync(id); // lookup full meal
+            if (selectedMeal is null)
+            {
+                errorMessage = "Failed to load meal details."; // if API returns no meal
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Failed to load meal details: {ex.Message}"; //error
+        }
+        finally
+        {
+            isSearching = false; // end loading
+        }
+    }
+
+    // Return to the results list to user
+    private void BackToResults()
+    {
+        selectedMeal = null;
+    }
+}
