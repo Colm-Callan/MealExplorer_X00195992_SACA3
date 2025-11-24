@@ -171,3 +171,25 @@ code {
     margin-top: 8px;
     text-decoration: underline;
 }
+
+/*colour for sidebar*/
+:root {
+    --sidebar-bg-top: #1b6ec2; 
+    --sidebar-bg-bottom: #1b6ec2; 
+    --sidebar-solid: #1b3558; 
+    --sidebar-link: #ffffff; 
+    --sidebar-active: rgba(255,255,255,0.08);
+}
+
+
+#sidebar,
+#sidebarMenu {
+    background: linear-gradient(180deg, var(--sidebar-bg-top) 0%, var(--sidebar-bg-bottom) 0%);
+    background-color: var(--sidebar-solid);
+    color: var(--sidebar-link);
+}
+
+    #sidebarMenu.collapse {
+        background: linear-gradient(180deg, var(--sidebar-bg-top) 0%, var(--sidebar-bg-bottom) 100%);
+    }
+
