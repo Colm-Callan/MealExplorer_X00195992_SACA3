@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\calla\\source\\csCA\\MealExplorer_X00195992_SACA3\\MealExplorer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{35A1D4F8-C682-89DE-8915-50436064FEA0}|MealExplorer.csproj|c:\\users\\calla\\source\\csca\\mealexplorer_x00195992_saca3\\mealexplorer\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{35A1D4F8-C682-89DE-8915-50436064FEA0}|MealExplorer.csproj|solutionrelative:wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{35A1D4F8-C682-89DE-8915-50436064FEA0}|MealExplorer.csproj|c:\\users\\calla\\source\\csca\\mealexplorer_x00195992_saca3\\mealexplorer\\pages\\mealfromingredients.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{35A1D4F8-C682-89DE-8915-50436064FEA0}|MealExplorer.csproj|solutionrelative:pages\\mealfromingredients.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{35A1D4F8-C682-89DE-8915-50436064FEA0}|MealExplorer.csproj|c:\\users\\calla\\source\\csca\\mealexplorer_x00195992_saca3\\mealexplorer\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -13,6 +13,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{35A1D4F8-C682-89DE-8915-50436064FEA0}|MealExplorer.csproj|c:\\users\\calla\\source\\csca\\mealexplorer_x00195992_saca3\\mealexplorer\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{35A1D4F8-C682-89DE-8915-50436064FEA0}|MealExplorer.csproj|solutionrelative:wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35A1D4F8-C682-89DE-8915-50436064FEA0}|MealExplorer.csproj|c:\\users\\calla\\source\\csca\\mealexplorer_x00195992_saca3\\mealexplorer\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{35A1D4F8-C682-89DE-8915-50436064FEA0}|MealExplorer.csproj|solutionrelative:wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{35A1D4F8-C682-89DE-8915-50436064FEA0}|MealExplorer.csproj|c:\\users\\calla\\source\\csca\\mealexplorer_x00195992_saca3\\mealexplorer\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -26,20 +30,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\calla\\source\\csCA\\MealExplorer_X00195992_SACA3\\MealExplorer\\wwwroot\\index.html",
               "RelativeDocumentMoniker": "wwwroot\\index.html",
               "ToolTip": "C:\\Users\\calla\\source\\csCA\\MealExplorer_X00195992_SACA3\\MealExplorer\\wwwroot\\index.html",
               "RelativeToolTip": "wwwroot\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-11-23T11:53:06.441Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MealFromIngredients.razor",
+              "DocumentMoniker": "C:\\Users\\calla\\source\\csCA\\MealExplorer_X00195992_SACA3\\MealExplorer\\Pages\\MealFromIngredients.razor",
+              "RelativeDocumentMoniker": "Pages\\MealFromIngredients.razor",
+              "ToolTip": "C:\\Users\\calla\\source\\csCA\\MealExplorer_X00195992_SACA3\\MealExplorer\\Pages\\MealFromIngredients.razor*",
+              "RelativeToolTip": "Pages\\MealFromIngredients.razor*",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-28T12:21:55.815Z",
               "EditorCaption": ""
             },
             {
@@ -50,7 +71,7 @@
               "RelativeDocumentMoniker": "Pages\\Home.razor",
               "ToolTip": "C:\\Users\\calla\\source\\csCA\\MealExplorer_X00195992_SACA3\\MealExplorer\\Pages\\Home.razor",
               "RelativeToolTip": "Pages\\Home.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAC0AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-11-24T12:47:50.349Z",
               "EditorCaption": ""
@@ -63,14 +84,14 @@
               "RelativeDocumentMoniker": "wwwroot\\css\\app.css",
               "ToolTip": "C:\\Users\\calla\\source\\csCA\\MealExplorer_X00195992_SACA3\\MealExplorer\\wwwroot\\css\\app.css",
               "RelativeToolTip": "wwwroot\\css\\app.css",
-              "ViewState": "AgIAAKEAAAAAAAAAAAAAAK4AAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAAAIoAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-11-24T12:01:19.511Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\Users\\calla\\source\\csCA\\MealExplorer_X00195992_SACA3\\MealExplorer\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "Layout\\NavMenu.razor",
@@ -78,8 +99,7 @@
               "RelativeToolTip": "Layout\\NavMenu.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-24T11:57:50.889Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-24T11:57:50.889Z"
             }
           ]
         }

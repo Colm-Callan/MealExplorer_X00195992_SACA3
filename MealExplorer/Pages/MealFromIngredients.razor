@@ -35,6 +35,7 @@ else if (!string.IsNullOrEmpty(errorMessage))
 else if (selectedMeal is not null)
 {
     <!-- Single meal details (used the thing fro thr style from random meal (Card desc, video and now go back as well) -->
+    <h3>     </h3>
     <div class="meal-card">
         @if (!string.IsNullOrWhiteSpace(selectedMeal.Thumbnail))
         {
@@ -47,7 +48,16 @@ else if (selectedMeal is not null)
             <strong>Category:</strong> @selectedMeal.Category <br />
             <strong>Cuisine/Area:</strong> @selectedMeal.Area
         </p>
-
+        @if (!string.IsNullOrWhiteSpace(selectedMeal.Youtube))
+        {
+            <p>
+                <a href="@selectedMeal.Youtube"
+                   target="_blank"
+                   class="meal-video-link">
+                    Watch on YouTube
+                </a>
+            </p>
+        }
         <p>
             <strong>Instructions:</strong><br />
             @selectedMeal.Instructions
@@ -68,17 +78,6 @@ else if (selectedMeal is not null)
                     }
                 </ul>
             </div>
-        }
-
-        @if (!string.IsNullOrWhiteSpace(selectedMeal.Youtube))
-        {
-            <p>
-                <a href="@selectedMeal.Youtube"
-                   target="_blank"
-                   class="meal-video-link">
-                    Watch on YouTube
-                </a>
-            </p>
         }
 
         <div class="meal-actions">
