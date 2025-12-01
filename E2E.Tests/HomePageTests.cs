@@ -73,10 +73,8 @@ public class RecordedTests : PageTest
         await Expect(Page.GetByRole(AriaRole.Heading, new PageGetByRoleOptions { NameString = "Find Meals By Ingredient" }))
             .ToBeVisibleAsync();
 
-        // Click the site brand to return home
         await Page.GetByRole(AriaRole.Link, new PageGetByRoleOptions { NameString = "MealExplorer" }).ClickAsync();
 
-        // Home should show the Random Meal heading
         await Expect(Page.GetByRole(AriaRole.Heading, new PageGetByRoleOptions { NameString = "Random Meal" }))
             .ToBeVisibleAsync();
     }
@@ -88,15 +86,12 @@ public class RecordedTests : PageTest
 
         await Page.GetByRole(AriaRole.Link, new PageGetByRoleOptions { NameString = "Meal From Ingredients" }).ClickAsync();
 
-        // Perform the search
         var ingredientInput = Page.GetByRole(AriaRole.Textbox, new PageGetByRoleOptions { NameString = "Ingredient:" });
         await ingredientInput.FillAsync("chicken");
         await Page.GetByRole(AriaRole.Button, new PageGetByRoleOptions { NameString = "Search" }).ClickAsync();
 
-        // Find links containing "Chicken"
         var chickenResults = Page.Locator("a").Filter(new LocatorFilterOptions { HasTextString = "Chicken" });
 
-        // Expect at least one result link to appear
         await Expect(chickenResults.First).ToBeVisibleAsync();
         var count = await chickenResults.CountAsync();
         Assert.That(count, Is.GreaterThan(0), "Expected at least one search result containing 'Chicken'.");
