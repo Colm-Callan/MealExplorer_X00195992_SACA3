@@ -47,7 +47,9 @@ dotnet test
 - MyTest_Base_Page: navigate to Meal From Ingredients and assert the Find (Meals By Ingredient) heading is visible
 - Clicking_RandomMeal_And_GetAnother_Random_Meal: click the Random Meal heading and the Get Another Random Meal button
 - Search_Ingredient_And_Open_Result: search chicken and open a specific result
-
+- Home_Shows_GetAnotherRandomMeal_Button_Enabled: shows get another meal button works
+- Brand_Link_Navigates_Home_From_Ingredients: clicking mealexplorer on top left brings back to home
+- Ingredient_Search_Shows_Chicken_Results: when you search for chicken it returns results
 
 ## Sources
 - [TheMealDB API](https://www.themealdb.com/api.php)
