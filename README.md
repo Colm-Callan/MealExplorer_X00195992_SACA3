@@ -1,14 +1,54 @@
-# Commit 1
-
-# Link to page 
+# Link to my page 
 https://colm-callan.github.io/MealExplorer_X00195992_SACA3/
-# 1st big piece of work the page is now depoyed and has a random meal generator on it.
 
-It works well is styled and has erro handling to some degree
-the page is reasonably slow and some video form youtube are private/unavailable now yet still dispaly as 
-begin able to be viewed and does still redirect you to youtube
-a lot of research was a part of this on my api and how to implement some thing i was unsure of and 
-definitely took the long way to do it but it functions as expected. A major help was the provided labs and the 
-provided basic weather page was very useful for me to see how it was called and used to make that page
+# Meal Explorer
+Software Architecture CA3 Blazor App — Colm Callan (X00195992)
 
-next i need to remove weather and counter from the sidebar and add my next page (meal based on ingredients you have)
+## Overview
+Meal Explorer is a Blazor Web App that uses the Meal DB API:
+- Home page shows a Random Meal, with a button to fetch another random mael
+- Meal From Ingredients lets you search by ingredient and open a meals details
+
+API: https://www.themealdb.com/api.php
+
+## Technologies Used
+- .NET 8
+- Blazor Web App
+- Playwright for E2E tests
+
+## Project Structure
+- MealExplorer/ — Blazor app
+- E2E.Tests/ — Playwright 
+
+## Local setup
+
+1) Clone and restore
+
+git clone (https://github.com/Colm-Callan/MealExplorer_X00195992_SACA3.git)
+cd MealExplorer_X00195992_SACA3
+dotnet restore
+
+2) Run the application
+   
+dotnet run
+
+The console will print to show where the website it likely (was for me)
+- https://localhost:7034
+- http://localhost:5207
+
+Open the URL in your browser.
+
+3) Tests
+   
+dotnet test
+
+
+## What the Tests Cover
+- MyTest_Base_Page: navigate to Meal From Ingredients and assert the Find (Meals By Ingredient) heading is visible
+- Clicking_RandomMeal_And_GetAnother_Random_Meal: click the Random Meal heading and the Get Another Random Meal button
+- Search_Ingredient_And_Open_Result: search chicken and open a specific result
+
+
+## Sources
+- [TheMealDB API](https://www.themealdb.com/api.php)
+- [Microsoft Playwright for .NET](https://playwright.dev/dotnet/)
