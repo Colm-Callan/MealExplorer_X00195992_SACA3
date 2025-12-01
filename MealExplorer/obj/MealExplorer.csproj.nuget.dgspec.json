@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\calla\\source\\csCA\\MealExplorer_X00195992_SACA3\\MealExplorer\\MealExplorer.csproj": {}
+    "C:\\Users\\calla\\SACA3\\MealExplorer_X00195992_SACA3\\MealExplorer\\MealExplorer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\calla\\source\\csCA\\MealExplorer_X00195992_SACA3\\MealExplorer\\MealExplorer.csproj": {
+    "C:\\Users\\calla\\SACA3\\MealExplorer_X00195992_SACA3\\MealExplorer\\MealExplorer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\calla\\source\\csCA\\MealExplorer_X00195992_SACA3\\MealExplorer\\MealExplorer.csproj",
+        "projectUniqueName": "C:\\Users\\calla\\SACA3\\MealExplorer_X00195992_SACA3\\MealExplorer\\MealExplorer.csproj",
         "projectName": "MealExplorer",
-        "projectPath": "C:\\Users\\calla\\source\\csCA\\MealExplorer_X00195992_SACA3\\MealExplorer\\MealExplorer.csproj",
+        "projectPath": "C:\\Users\\calla\\SACA3\\MealExplorer_X00195992_SACA3\\MealExplorer\\MealExplorer.csproj",
         "packagesPath": "C:\\Users\\calla\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\calla\\source\\csCA\\MealExplorer_X00195992_SACA3\\MealExplorer\\obj\\",
+        "outputPath": "C:\\Users\\calla\\SACA3\\MealExplorer_X00195992_SACA3\\MealExplorer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

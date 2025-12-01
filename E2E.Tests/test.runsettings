@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <RunConfiguration>
+    <EnvironmentVariables>
+      <E2E_BASE_URL>http://localhost:5207</E2E_BASE_URL>
+      <!-- Uncomment to watch the browser and open Playwright Inspector -->
+       <!--<PWDEBUG>1</PWDEBUG> -->
+    </EnvironmentVariables>
+  </RunConfiguration>
+</RunSettings>

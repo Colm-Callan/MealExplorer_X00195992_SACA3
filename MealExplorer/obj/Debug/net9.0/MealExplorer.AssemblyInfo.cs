@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MealExplorer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65e38a053db4d50c453e9541bef75c6eb09d8c06")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f88440346eb3fa3747530e3b8fe841790a4b2786")]
 [assembly: System.Reflection.AssemblyProductAttribute("MealExplorer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MealExplorer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
